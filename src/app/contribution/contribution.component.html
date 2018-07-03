@@ -1,0 +1,141 @@
+<mat-card>
+  <mat-card-title>
+    Contribution
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Financial Type</mat-label>
+    <input matInput type="text" id="financial_type_id" [(ngModel)]="contribution.financial_type_id" name="financial_type_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Contribution Page ID</mat-label>
+    <input matInput type="text" id="contribution_page_id" [(ngModel)]="contribution.contribution_page_id" name="contribution_page_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Payment Method ID</mat-label>
+    <input matInput type="text" id="payment_instrument_id" [(ngModel)]="contribution.payment_instrument_id" name="payment_instrument_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Date Received</mat-label>
+    <input matInput type="text" id="receive_date" [(ngModel)]="contribution.receive_date" name="receive_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Non-deductible Amount</mat-label>
+    <input matInput type="text" id="non_deductible_amount" [(ngModel)]="contribution.non_deductible_amount" name="non_deductible_amount">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Total Amount</mat-label>
+    <input matInput type="text" id="total_amount" [(ngModel)]="contribution.total_amount" name="total_amount">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Fee Amount</mat-label>
+    <input matInput type="text" id="fee_amount" [(ngModel)]="contribution.fee_amount" name="fee_amount">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Net Amount</mat-label>
+    <input matInput type="text" id="net_amount" [(ngModel)]="contribution.net_amount" name="net_amount">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Transaction ID</mat-label>
+    <input matInput type="text" id="trxn_id" [(ngModel)]="contribution.trxn_id" name="trxn_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Invoice Reference</mat-label>
+    <input matInput type="text" id="invoice_id" [(ngModel)]="contribution.invoice_id" name="invoice_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Invoice Number</mat-label>
+    <input matInput type="text" id="invoice_number" [(ngModel)]="contribution.invoice_number" name="invoice_number">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Currency</mat-label>
+    <input matInput type="text" id="currency" [(ngModel)]="contribution.currency" name="currency">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Cancel Date</mat-label>
+    <input matInput type="text" id="cancel_date" [(ngModel)]="contribution.cancel_date" name="cancel_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Cancel Reason</mat-label>
+    <input matInput type="text" id="cancel_reason" [(ngModel)]="contribution.cancel_reason" name="cancel_reason">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Receipt Date</mat-label>
+    <input matInput type="text" id="receipt_date" [(ngModel)]="contribution.receipt_date" name="receipt_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Thank-you Date</mat-label>
+    <input matInput type="text" id="thankyou_date" [(ngModel)]="contribution.thankyou_date" name="thankyou_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Contribution Source</mat-label>
+    <input matInput type="text" id="source" [(ngModel)]="contribution.source" name="source">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Amount Label</mat-label>
+    <input matInput type="text" id="amount_level" [(ngModel)]="contribution.amount_level" name="amount_level">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Recurring Contribution ID</mat-label>
+    <input matInput type="text" id="contribution_recur_id" [(ngModel)]="contribution.contribution_recur_id" name="contribution_recur_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Test</mat-label>
+    <input matInput type="text" id="is_test" [(ngModel)]="contribution.is_test" name="is_test">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Is Pay Later</mat-label>
+    <input matInput type="text" id="is_pay_later" [(ngModel)]="contribution.is_pay_later" name="is_pay_later">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Contribution Status ID</mat-label>
+    <input matInput type="text" id="contribution_status_id" [(ngModel)]="contribution.contribution_status_id" name="contribution_status_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Contribution Address</mat-label>
+    <input matInput type="text" id="address_id" [(ngModel)]="contribution.address_id" name="address_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Check Number</mat-label>
+    <input matInput type="text" id="check_number" [(ngModel)]="contribution.check_number" name="check_number">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Campaign</mat-label>
+    <input matInput type="text" id="campaign_id" [(ngModel)]="contribution.campaign_id" name="campaign_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Credit Note ID</mat-label>
+    <input matInput type="text" id="creditnote_id" [(ngModel)]="contribution.creditnote_id" name="creditnote_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Tax Amount</mat-label>
+    <input matInput type="text" id="tax_amount" [(ngModel)]="contribution.tax_amount" name="tax_amount">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Revenue Recognition Date</mat-label>
+    <input matInput type="text" id="revenue_recognition_date" [(ngModel)]="contribution.revenue_recognition_date" name="revenue_recognition_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>How long have you been a donor?</mat-label>
+    <input matInput type="text" id="custom_6" [(ngModel)]="contribution.custom_6" name="custom_6">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Known areas of interest</mat-label>
+    <input matInput type="text" id="custom_5" [(ngModel)]="contribution.custom_5" name="custom_5">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Contribution ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="contribution.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Get Test Contributions?</mat-label>
+    <input matInput type="text" id="contribution_test" [(ngModel)]="contribution.contribution_test" name="contribution_test">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Contact ID</mat-label>
+    <input matInput type="text" id="contact_id" [(ngModel)]="contribution.contact_id" name="contact_id">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-contribution">
+  <div class="entity-title"></div>
+</div>

@@ -1,0 +1,161 @@
+<mat-card>
+  <mat-card-title>
+    ActionSchedule
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Action Schedule ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="actionSchedule.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput type="text" id="name" [(ngModel)]="actionSchedule.name" name="name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Title</mat-label>
+    <input matInput type="text" id="title" [(ngModel)]="actionSchedule.title" name="title">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Recipient</mat-label>
+    <input matInput type="text" id="recipient" [(ngModel)]="actionSchedule.recipient" name="recipient">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Limit To</mat-label>
+    <input matInput type="text" id="limit_to" [(ngModel)]="actionSchedule.limit_to" name="limit_to">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Entity Value</mat-label>
+    <input matInput type="text" id="entity_value" [(ngModel)]="actionSchedule.entity_value" name="entity_value">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Entity Status</mat-label>
+    <input matInput type="text" id="entity_status" [(ngModel)]="actionSchedule.entity_status" name="entity_status">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Start Action Offset</mat-label>
+    <input matInput type="text" id="start_action_offset" [(ngModel)]="actionSchedule.start_action_offset" name="start_action_offset">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Start Action Unit</mat-label>
+    <input matInput type="text" id="start_action_unit" [(ngModel)]="actionSchedule.start_action_unit" name="start_action_unit">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Start Action Condition</mat-label>
+    <input matInput type="text" id="start_action_condition" [(ngModel)]="actionSchedule.start_action_condition" name="start_action_condition">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Start Action Date</mat-label>
+    <input matInput type="text" id="start_action_date" [(ngModel)]="actionSchedule.start_action_date" name="start_action_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Repeat?</mat-label>
+    <input matInput type="text" id="is_repeat" [(ngModel)]="actionSchedule.is_repeat" name="is_repeat">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Repetition Frequency Unit</mat-label>
+    <input matInput type="text" id="repetition_frequency_unit" [(ngModel)]="actionSchedule.repetition_frequency_unit" name="repetition_frequency_unit">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Repetition Frequency Interval</mat-label>
+    <input matInput type="text" id="repetition_frequency_interval" [(ngModel)]="actionSchedule.repetition_frequency_interval" name="repetition_frequency_interval">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>End Frequency Unit</mat-label>
+    <input matInput type="text" id="end_frequency_unit" [(ngModel)]="actionSchedule.end_frequency_unit" name="end_frequency_unit">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>End Frequency Interval</mat-label>
+    <input matInput type="text" id="end_frequency_interval" [(ngModel)]="actionSchedule.end_frequency_interval" name="end_frequency_interval">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>End Action</mat-label>
+    <input matInput type="text" id="end_action" [(ngModel)]="actionSchedule.end_action" name="end_action">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>End Date</mat-label>
+    <input matInput type="text" id="end_date" [(ngModel)]="actionSchedule.end_date" name="end_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Schedule is Active?</mat-label>
+    <input matInput type="text" id="is_active" [(ngModel)]="actionSchedule.is_active" name="is_active">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Recipient Manual</mat-label>
+    <input matInput type="text" id="recipient_manual" [(ngModel)]="actionSchedule.recipient_manual" name="recipient_manual">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Recipient Listing</mat-label>
+    <input matInput type="text" id="recipient_listing" [(ngModel)]="actionSchedule.recipient_listing" name="recipient_listing">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Reminder Text</mat-label>
+    <input matInput type="text" id="body_text" [(ngModel)]="actionSchedule.body_text" name="body_text">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Reminder HTML</mat-label>
+    <input matInput type="text" id="body_html" [(ngModel)]="actionSchedule.body_html" name="body_html">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>SMS Reminder Text</mat-label>
+    <input matInput type="text" id="sms_body_text" [(ngModel)]="actionSchedule.sms_body_text" name="sms_body_text">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Reminder Subject</mat-label>
+    <input matInput type="text" id="subject" [(ngModel)]="actionSchedule.subject" name="subject">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Record Activity for Reminder?</mat-label>
+    <input matInput type="text" id="record_activity" [(ngModel)]="actionSchedule.record_activity" name="record_activity">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Reminder Mapping</mat-label>
+    <input matInput type="text" id="mapping_id" [(ngModel)]="actionSchedule.mapping_id" name="mapping_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Reminder Group</mat-label>
+    <input matInput type="text" id="group_id" [(ngModel)]="actionSchedule.group_id" name="group_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Reminder Template</mat-label>
+    <input matInput type="text" id="msg_template_id" [(ngModel)]="actionSchedule.msg_template_id" name="msg_template_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>SMS Reminder Template</mat-label>
+    <input matInput type="text" id="sms_template_id" [(ngModel)]="actionSchedule.sms_template_id" name="sms_template_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Fixed Date for Reminder</mat-label>
+    <input matInput type="text" id="absolute_date" [(ngModel)]="actionSchedule.absolute_date" name="absolute_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Reminder from Name</mat-label>
+    <input matInput type="text" id="from_name" [(ngModel)]="actionSchedule.from_name" name="from_name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Reminder From Email</mat-label>
+    <input matInput type="text" id="from_email" [(ngModel)]="actionSchedule.from_email" name="from_email">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Message Mode</mat-label>
+    <input matInput type="text" id="mode" [(ngModel)]="actionSchedule.mode" name="mode">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>SMS Provider</mat-label>
+    <input matInput type="text" id="sms_provider_id" [(ngModel)]="actionSchedule.sms_provider_id" name="sms_provider_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Used For</mat-label>
+    <input matInput type="text" id="used_for" [(ngModel)]="actionSchedule.used_for" name="used_for">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Filter Contact Language</mat-label>
+    <input matInput type="text" id="filter_contact_language" [(ngModel)]="actionSchedule.filter_contact_language" name="filter_contact_language">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Communication Language</mat-label>
+    <input matInput type="text" id="communication_language" [(ngModel)]="actionSchedule.communication_language" name="communication_language">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-action-schedule">
+  <div class="entity-title"></div>
+</div>

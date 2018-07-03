@@ -1,0 +1,77 @@
+<mat-card>
+  <mat-card-title>
+    Campaign
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Campaign ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="campaign.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Campaign Name</mat-label>
+    <input matInput type="text" id="name" [(ngModel)]="campaign.name" name="name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Campaign Title</mat-label>
+    <input matInput type="text" id="title" [(ngModel)]="campaign.title" name="title">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Campaign Description</mat-label>
+    <input matInput type="text" id="description" [(ngModel)]="campaign.description" name="description">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Campaign Start Date</mat-label>
+    <input matInput type="text" id="start_date" [(ngModel)]="campaign.start_date" name="start_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Campaign End Date</mat-label>
+    <input matInput type="text" id="end_date" [(ngModel)]="campaign.end_date" name="end_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Campaign Type</mat-label>
+    <input matInput type="text" id="campaign_type_id" [(ngModel)]="campaign.campaign_type_id" name="campaign_type_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Campaign Status</mat-label>
+    <input matInput type="text" id="status_id" [(ngModel)]="campaign.status_id" name="status_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Campaign External ID</mat-label>
+    <input matInput type="text" id="external_identifier" [(ngModel)]="campaign.external_identifier" name="external_identifier">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Parent Campaign</mat-label>
+    <input matInput type="text" id="parent_id" [(ngModel)]="campaign.parent_id" name="parent_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Is Campaign Active?</mat-label>
+    <input matInput type="text" id="is_active" [(ngModel)]="campaign.is_active" name="is_active">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Campaign Created By</mat-label>
+    <input matInput type="text" id="created_id" [(ngModel)]="campaign.created_id" name="created_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Campaign Created Date</mat-label>
+    <input matInput type="text" id="created_date" [(ngModel)]="campaign.created_date" name="created_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Campaign Modified By</mat-label>
+    <input matInput type="text" id="last_modified_id" [(ngModel)]="campaign.last_modified_id" name="last_modified_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Campaign Modified Date</mat-label>
+    <input matInput type="text" id="last_modified_date" [(ngModel)]="campaign.last_modified_date" name="last_modified_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Campaign Goals</mat-label>
+    <input matInput type="text" id="goal_general" [(ngModel)]="campaign.goal_general" name="goal_general">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Goal Revenue</mat-label>
+    <input matInput type="text" id="goal_revenue" [(ngModel)]="campaign.goal_revenue" name="goal_revenue">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-campaign">
+  <div class="entity-title"></div>
+</div>

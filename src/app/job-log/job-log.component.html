@@ -1,0 +1,41 @@
+<mat-card>
+  <mat-card-title>
+    JobLog
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Job Log ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="jobLog.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Domain ID</mat-label>
+    <input matInput type="text" id="domain_id" [(ngModel)]="jobLog.domain_id" name="domain_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Timestamp</mat-label>
+    <input matInput type="text" id="run_time" [(ngModel)]="jobLog.run_time" name="run_time">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Job ID</mat-label>
+    <input matInput type="text" id="job_id" [(ngModel)]="jobLog.job_id" name="job_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Job Name</mat-label>
+    <input matInput type="text" id="name" [(ngModel)]="jobLog.name" name="name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Command</mat-label>
+    <input matInput type="text" id="command" [(ngModel)]="jobLog.command" name="command">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Description</mat-label>
+    <input matInput type="text" id="description" [(ngModel)]="jobLog.description" name="description">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Extended Data</mat-label>
+    <input matInput type="text" id="data" [(ngModel)]="jobLog.data" name="data">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-job-log">
+  <div class="entity-title"></div>
+</div>

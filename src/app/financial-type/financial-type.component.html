@@ -1,0 +1,33 @@
+<mat-card>
+  <mat-card-title>
+    FinancialType
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Financial Type ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="financialType.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Financial Type</mat-label>
+    <input matInput type="text" id="name" [(ngModel)]="financialType.name" name="name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Description</mat-label>
+    <input matInput type="text" id="description" [(ngModel)]="financialType.description" name="description">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Is Tax Deductible?</mat-label>
+    <input matInput type="text" id="is_deductible" [(ngModel)]="financialType.is_deductible" name="is_deductible">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Financial Type is Reserved?</mat-label>
+    <input matInput type="text" id="is_reserved" [(ngModel)]="financialType.is_reserved" name="is_reserved">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Financial Type Is Active?</mat-label>
+    <input matInput type="text" id="is_active" [(ngModel)]="financialType.is_active" name="is_active">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-financial-type">
+  <div class="entity-title"></div>
+</div>

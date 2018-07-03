@@ -1,0 +1,69 @@
+<mat-card>
+  <mat-card-title>
+    Grant
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Contact ID</mat-label>
+    <input matInput type="text" id="contact_id" [(ngModel)]="grant.contact_id" name="contact_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Application received date</mat-label>
+    <input matInput type="text" id="application_received_date" [(ngModel)]="grant.application_received_date" name="application_received_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Decision date</mat-label>
+    <input matInput type="text" id="decision_date" [(ngModel)]="grant.decision_date" name="decision_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Grant Money transfer date</mat-label>
+    <input matInput type="text" id="money_transfer_date" [(ngModel)]="grant.money_transfer_date" name="money_transfer_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Grant Due Date</mat-label>
+    <input matInput type="text" id="grant_due_date" [(ngModel)]="grant.grant_due_date" name="grant_due_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Grant report received</mat-label>
+    <input matInput type="text" id="grant_report_received" [(ngModel)]="grant.grant_report_received" name="grant_report_received">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Grant Type</mat-label>
+    <input matInput type="text" id="grant_type_id" [(ngModel)]="grant.grant_type_id" name="grant_type_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Total Amount</mat-label>
+    <input matInput type="text" id="amount_total" [(ngModel)]="grant.amount_total" name="amount_total">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Amount Requested</mat-label>
+    <input matInput type="text" id="amount_requested" [(ngModel)]="grant.amount_requested" name="amount_requested">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Amount granted</mat-label>
+    <input matInput type="text" id="amount_granted" [(ngModel)]="grant.amount_granted" name="amount_granted">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Grant Currency</mat-label>
+    <input matInput type="text" id="currency" [(ngModel)]="grant.currency" name="currency">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Grant Rationale</mat-label>
+    <input matInput type="text" id="rationale" [(ngModel)]="grant.rationale" name="rationale">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Grant Status</mat-label>
+    <input matInput type="text" id="status_id" [(ngModel)]="grant.status_id" name="status_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Financial Type</mat-label>
+    <input matInput type="text" id="financial_type_id" [(ngModel)]="grant.financial_type_id" name="financial_type_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Grant ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="grant.id" name="id">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-grant">
+  <div class="entity-title"></div>
+</div>

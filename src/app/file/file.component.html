@@ -1,0 +1,41 @@
+<mat-card>
+  <mat-card-title>
+    File
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>File ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="file.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>File Type</mat-label>
+    <input matInput type="text" id="file_type_id" [(ngModel)]="file.file_type_id" name="file_type_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Mime Type</mat-label>
+    <input matInput type="text" id="mime_type" [(ngModel)]="file.mime_type" name="mime_type">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Path</mat-label>
+    <input matInput type="text" id="uri" [(ngModel)]="file.uri" name="uri">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>File Contents</mat-label>
+    <input matInput type="text" id="document" [(ngModel)]="file.document" name="document">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>File Description</mat-label>
+    <input matInput type="text" id="description" [(ngModel)]="file.description" name="description">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>File Upload Date</mat-label>
+    <input matInput type="text" id="upload_date" [(ngModel)]="file.upload_date" name="upload_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Created By Contact ID</mat-label>
+    <input matInput type="text" id="created_id" [(ngModel)]="file.created_id" name="created_id">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-file">
+  <div class="entity-title"></div>
+</div>

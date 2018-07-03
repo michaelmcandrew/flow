@@ -1,0 +1,101 @@
+<mat-card>
+  <mat-card-title>
+    PaymentProcessorType
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Payment Processor Type ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="paymentProcessorType.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Payment Processor variable name to be used in code</mat-label>
+    <input matInput type="text" id="name" [(ngModel)]="paymentProcessorType.name" name="name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Payment Processor Title</mat-label>
+    <input matInput type="text" id="title" [(ngModel)]="paymentProcessorType.title" name="title">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Processor Type Description</mat-label>
+    <input matInput type="text" id="description" [(ngModel)]="paymentProcessorType.description" name="description">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Processor Type Is Active?</mat-label>
+    <input matInput type="text" id="is_active" [(ngModel)]="paymentProcessorType.is_active" name="is_active">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Processor Type is Default?</mat-label>
+    <input matInput type="text" id="is_default" [(ngModel)]="paymentProcessorType.is_default" name="is_default">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Label for User Name if used</mat-label>
+    <input matInput type="text" id="user_name_label" [(ngModel)]="paymentProcessorType.user_name_label" name="user_name_label">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Label for password</mat-label>
+    <input matInput type="text" id="password_label" [(ngModel)]="paymentProcessorType.password_label" name="password_label">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Label for Signature</mat-label>
+    <input matInput type="text" id="signature_label" [(ngModel)]="paymentProcessorType.signature_label" name="signature_label">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Label for Subject</mat-label>
+    <input matInput type="text" id="subject_label" [(ngModel)]="paymentProcessorType.subject_label" name="subject_label">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Suffix for PHP class name implementation</mat-label>
+    <input matInput type="text" id="class_name" [(ngModel)]="paymentProcessorType.class_name" name="class_name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Default Live Site URL</mat-label>
+    <input matInput type="text" id="url_site_default" [(ngModel)]="paymentProcessorType.url_site_default" name="url_site_default">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Default API Site URL</mat-label>
+    <input matInput type="text" id="url_api_default" [(ngModel)]="paymentProcessorType.url_api_default" name="url_api_default">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Default Live Recurring Payments URL</mat-label>
+    <input matInput type="text" id="url_recur_default" [(ngModel)]="paymentProcessorType.url_recur_default" name="url_recur_default">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Default Live Button URL</mat-label>
+    <input matInput type="text" id="url_button_default" [(ngModel)]="paymentProcessorType.url_button_default" name="url_button_default">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Default Test Site URL</mat-label>
+    <input matInput type="text" id="url_site_test_default" [(ngModel)]="paymentProcessorType.url_site_test_default" name="url_site_test_default">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Default Test API URL</mat-label>
+    <input matInput type="text" id="url_api_test_default" [(ngModel)]="paymentProcessorType.url_api_test_default" name="url_api_test_default">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Default Test Recurring Payment URL</mat-label>
+    <input matInput type="text" id="url_recur_test_default" [(ngModel)]="paymentProcessorType.url_recur_test_default" name="url_recur_test_default">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Default Test Button URL</mat-label>
+    <input matInput type="text" id="url_button_test_default" [(ngModel)]="paymentProcessorType.url_button_test_default" name="url_button_test_default">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Billing Mode</mat-label>
+    <input matInput type="text" id="billing_mode" [(ngModel)]="paymentProcessorType.billing_mode" name="billing_mode">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Processor Type Supports Recurring?</mat-label>
+    <input matInput type="text" id="is_recur" [(ngModel)]="paymentProcessorType.is_recur" name="is_recur">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Processor Type Payment Type</mat-label>
+    <input matInput type="text" id="payment_type" [(ngModel)]="paymentProcessorType.payment_type" name="payment_type">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Payment Method</mat-label>
+    <input matInput type="text" id="payment_instrument_id" [(ngModel)]="paymentProcessorType.payment_instrument_id" name="payment_instrument_id">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-payment-processor-type">
+  <div class="entity-title"></div>
+</div>

@@ -1,0 +1,29 @@
+<mat-card>
+  <mat-card-title>
+    EntityFinancialTrxn
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Entity Financial Transaction ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="entityFinancialTrxn.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Entity Table</mat-label>
+    <input matInput type="text" id="entity_table" [(ngModel)]="entityFinancialTrxn.entity_table" name="entity_table">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Entity ID</mat-label>
+    <input matInput type="text" id="entity_id" [(ngModel)]="entityFinancialTrxn.entity_id" name="entity_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Financial Transaction Id</mat-label>
+    <input matInput type="text" id="financial_trxn_id" [(ngModel)]="entityFinancialTrxn.financial_trxn_id" name="financial_trxn_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Amount</mat-label>
+    <input matInput type="text" id="amount" [(ngModel)]="entityFinancialTrxn.amount" name="amount">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-entity-financial-trxn">
+  <div class="entity-title"></div>
+</div>

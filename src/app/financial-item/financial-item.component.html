@@ -1,0 +1,53 @@
+<mat-card>
+  <mat-card-title>
+    FinancialItem
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Financial Item ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="financialItem.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Financial Item Created Date</mat-label>
+    <input matInput type="text" id="created_date" [(ngModel)]="financialItem.created_date" name="created_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Financial Item Transaction Date</mat-label>
+    <input matInput type="text" id="transaction_date" [(ngModel)]="financialItem.transaction_date" name="transaction_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Financial Item Contact ID</mat-label>
+    <input matInput type="text" id="contact_id" [(ngModel)]="financialItem.contact_id" name="contact_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Financial Item Description</mat-label>
+    <input matInput type="text" id="description" [(ngModel)]="financialItem.description" name="description">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Amount</mat-label>
+    <input matInput type="text" id="amount" [(ngModel)]="financialItem.amount" name="amount">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Financial Item Currency</mat-label>
+    <input matInput type="text" id="currency" [(ngModel)]="financialItem.currency" name="currency">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Financial Account ID</mat-label>
+    <input matInput type="text" id="financial_account_id" [(ngModel)]="financialItem.financial_account_id" name="financial_account_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Financial Item Status ID</mat-label>
+    <input matInput type="text" id="status_id" [(ngModel)]="financialItem.status_id" name="status_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Entity Table</mat-label>
+    <input matInput type="text" id="entity_table" [(ngModel)]="financialItem.entity_table" name="entity_table">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Entity ID</mat-label>
+    <input matInput type="text" id="entity_id" [(ngModel)]="financialItem.entity_id" name="entity_id">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-financial-item">
+  <div class="entity-title"></div>
+</div>

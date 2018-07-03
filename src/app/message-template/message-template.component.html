@@ -1,0 +1,53 @@
+<mat-card>
+  <mat-card-title>
+    MessageTemplate
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Message Template ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="messageTemplate.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Message Template Title</mat-label>
+    <input matInput type="text" id="msg_title" [(ngModel)]="messageTemplate.msg_title" name="msg_title">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Message Template Subject</mat-label>
+    <input matInput type="text" id="msg_subject" [(ngModel)]="messageTemplate.msg_subject" name="msg_subject">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Message Template Text</mat-label>
+    <input matInput type="text" id="msg_text" [(ngModel)]="messageTemplate.msg_text" name="msg_text">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Message Template HTML</mat-label>
+    <input matInput type="text" id="msg_html" [(ngModel)]="messageTemplate.msg_html" name="msg_html">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Is Active</mat-label>
+    <input matInput type="text" id="is_active" [(ngModel)]="messageTemplate.is_active" name="is_active">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Message Template Workflow</mat-label>
+    <input matInput type="text" id="workflow_id" [(ngModel)]="messageTemplate.workflow_id" name="workflow_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Message Template Is Default?</mat-label>
+    <input matInput type="text" id="is_default" [(ngModel)]="messageTemplate.is_default" name="is_default">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Message Template Is Reserved?</mat-label>
+    <input matInput type="text" id="is_reserved" [(ngModel)]="messageTemplate.is_reserved" name="is_reserved">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Message Template is used for SMS?</mat-label>
+    <input matInput type="text" id="is_sms" [(ngModel)]="messageTemplate.is_sms" name="is_sms">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Message Template Format</mat-label>
+    <input matInput type="text" id="pdf_format_id" [(ngModel)]="messageTemplate.pdf_format_id" name="pdf_format_id">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-message-template">
+  <div class="entity-title"></div>
+</div>

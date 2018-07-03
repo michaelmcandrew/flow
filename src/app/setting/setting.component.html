@@ -1,0 +1,697 @@
+<mat-card>
+  <mat-card-title>
+    Setting
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Address Standardization Provider.</mat-label>
+    <input matInput type="text" id="address_standardization_provider" [(ngModel)]="setting.address_standardization_provider" name="address_standardization_provider">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Web service user ID</mat-label>
+    <input matInput type="text" id="address_standardization_userid" [(ngModel)]="setting.address_standardization_userid" name="address_standardization_userid">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Web Service URL</mat-label>
+    <input matInput type="text" id="address_standardization_url" [(ngModel)]="setting.address_standardization_url" name="address_standardization_url">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Hide Country in Mailing Labels when same as domain country</mat-label>
+    <input matInput type="text" id="hideCountryMailingLabels" [(ngModel)]="setting.hideCountryMailingLabels" name="hideCountryMailingLabels">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Tag for Unconfirmed Petition Signers</mat-label>
+    <input matInput type="text" id="tag_unconfirmed" [(ngModel)]="setting.tag_unconfirmed" name="tag_unconfirmed">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Petition Signers Group</mat-label>
+    <input matInput type="text" id="petition_contacts" [(ngModel)]="setting.petition_contacts" name="petition_contacts">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Redact Activity Email</mat-label>
+    <input matInput type="text" id="civicaseRedactActivityEmail" [(ngModel)]="setting.civicaseRedactActivityEmail" name="civicaseRedactActivityEmail">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Allow Multiple Case Clients</mat-label>
+    <input matInput type="text" id="civicaseAllowMultipleClients" [(ngModel)]="setting.civicaseAllowMultipleClients" name="civicaseAllowMultipleClients">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Activity Type Sorting</mat-label>
+    <input matInput type="text" id="civicaseNaturalActivityTypeSort" [(ngModel)]="setting.civicaseNaturalActivityTypeSort" name="civicaseNaturalActivityTypeSort">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Enable Embedded Activity Revisions</mat-label>
+    <input matInput type="text" id="civicaseActivityRevisions" [(ngModel)]="setting.civicaseActivityRevisions" name="civicaseActivityRevisions">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>CVV required for backoffice?</mat-label>
+    <input matInput type="text" id="cvv_backoffice_required" [(ngModel)]="setting.cvv_backoffice_required" name="cvv_backoffice_required">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Contribution Invoice Settings</mat-label>
+    <input matInput type="text" id="contribution_invoice_settings" [(ngModel)]="setting.contribution_invoice_settings" name="contribution_invoice_settings">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Enable Tax and Invoicing</mat-label>
+    <input matInput type="text" id="invoicing" [(ngModel)]="setting.invoicing" name="invoicing">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Enable Access Control by Financial Type</mat-label>
+    <input matInput type="text" id="acl_financial_type" [(ngModel)]="setting.acl_financial_type" name="acl_financial_type">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Enable Deferred Revenue</mat-label>
+    <input matInput type="text" id="deferred_revenue_enabled" [(ngModel)]="setting.deferred_revenue_enabled" name="deferred_revenue_enabled">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Default invoice payment page</mat-label>
+    <input matInput type="text" id="default_invoice_page" [(ngModel)]="setting.default_invoice_page" name="default_invoice_page">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Always post to Accounts Receivable?</mat-label>
+    <input matInput type="text" id="always_post_to_accounts_receivable" [(ngModel)]="setting.always_post_to_accounts_receivable" name="always_post_to_accounts_receivable">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Automatically update related contributions when Membership Type is changed</mat-label>
+    <input matInput type="text" id="update_contribution_on_membership_type_change" [(ngModel)]="setting.update_contribution_on_membership_type_change" name="update_contribution_on_membership_type_change">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Viewing Contacts</mat-label>
+    <input matInput type="text" id="contact_view_options" [(ngModel)]="setting.contact_view_options" name="contact_view_options">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Editing Contacts</mat-label>
+    <input matInput type="text" id="contact_edit_options" [(ngModel)]="setting.contact_edit_options" name="contact_edit_options">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Contact Search</mat-label>
+    <input matInput type="text" id="advanced_search_options" [(ngModel)]="setting.advanced_search_options" name="advanced_search_options">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Contact Dashboard</mat-label>
+    <input matInput type="text" id="user_dashboard_options" [(ngModel)]="setting.user_dashboard_options" name="user_dashboard_options">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Addressing Options</mat-label>
+    <input matInput type="text" id="address_options" [(ngModel)]="setting.address_options" name="address_options">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Address Format</mat-label>
+    <input matInput type="text" id="address_format" [(ngModel)]="setting.address_format" name="address_format">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Mailing Format</mat-label>
+    <input matInput type="text" id="mailing_format" [(ngModel)]="setting.mailing_format" name="mailing_format">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Display Name Format</mat-label>
+    <input matInput type="text" id="display_name_format" [(ngModel)]="setting.display_name_format" name="display_name_format">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Sort Name Format</mat-label>
+    <input matInput type="text" id="sort_name_format" [(ngModel)]="setting.sort_name_format" name="sort_name_format">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Accept profile submissions from external sites</mat-label>
+    <input matInput type="text" id="remote_profile_submissions" [(ngModel)]="setting.remote_profile_submissions" name="remote_profile_submissions">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Allow alerts to auto-dismiss?</mat-label>
+    <input matInput type="text" id="allow_alert_autodismissal" [(ngModel)]="setting.allow_alert_autodismissal" name="allow_alert_autodismissal">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Wysiwig Editor</mat-label>
+    <input matInput type="text" id="editor_id" [(ngModel)]="setting.editor_id" name="editor_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Check for Similar Contacts</mat-label>
+    <input matInput type="text" id="contact_ajax_check_similar" [(ngModel)]="setting.contact_ajax_check_similar" name="contact_ajax_check_similar">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Ajax Popups Enabled</mat-label>
+    <input matInput type="text" id="ajaxPopupsEnabled" [(ngModel)]="setting.ajaxPopupsEnabled" name="ajaxPopupsEnabled">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Notify Activity Assignees</mat-label>
+    <input matInput type="text" id="activity_assignee_notification" [(ngModel)]="setting.activity_assignee_notification" name="activity_assignee_notification">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Include ICal Invite to Activity Assignees</mat-label>
+    <input matInput type="text" id="activity_assignee_notification_ics" [(ngModel)]="setting.activity_assignee_notification_ics" name="activity_assignee_notification_ics">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Autocomplete Contact Search</mat-label>
+    <input matInput type="text" id="contact_autocomplete_options" [(ngModel)]="setting.contact_autocomplete_options" name="contact_autocomplete_options">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Contact Reference Options</mat-label>
+    <input matInput type="text" id="contact_reference_options" [(ngModel)]="setting.contact_reference_options" name="contact_reference_options">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Viewing Smart Groups</mat-label>
+    <input matInput type="text" id="contact_smart_group_display" [(ngModel)]="setting.contact_smart_group_display" name="contact_smart_group_display">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Smart Group Refresh Mode</mat-label>
+    <input matInput type="text" id="smart_group_cache_refresh_mode" [(ngModel)]="setting.smart_group_cache_refresh_mode" name="smart_group_cache_refresh_mode">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>System Installed</mat-label>
+    <input matInput type="text" id="installed" [(ngModel)]="setting.installed" name="installed">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Maximum Attachments</mat-label>
+    <input matInput type="text" id="max_attachments" [(ngModel)]="setting.max_attachments" name="max_attachments">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Maximum File Size (in MB)</mat-label>
+    <input matInput type="text" id="maxFileSize" [(ngModel)]="setting.maxFileSize" name="maxFileSize">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Contact Trash and Undelete</mat-label>
+    <input matInput type="text" id="contact_undelete" [(ngModel)]="setting.contact_undelete" name="contact_undelete">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Contact Permanent Delete</mat-label>
+    <input matInput type="text" id="allowPermDeleteFinancial" [(ngModel)]="setting.allowPermDeleteFinancial" name="allowPermDeleteFinancial">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Status Alerts</mat-label>
+    <input matInput type="text" id="securityAlert" [(ngModel)]="setting.securityAlert" name="securityAlert">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Attach PDF copy to receipts</mat-label>
+    <input matInput type="text" id="doNotAttachPDFReceipt" [(ngModel)]="setting.doNotAttachPDFReceipt" name="doNotAttachPDFReceipt">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Record generated letters</mat-label>
+    <input matInput type="text" id="recordGeneratedLetters" [(ngModel)]="setting.recordGeneratedLetters" name="recordGeneratedLetters">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Path to wkhtmltopdf executable</mat-label>
+    <input matInput type="text" id="wkhtmltopdfPath" [(ngModel)]="setting.wkhtmltopdfPath" name="wkhtmltopdfPath">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Recaptcha Options</mat-label>
+    <input matInput type="text" id="recaptchaOptions" [(ngModel)]="setting.recaptchaOptions" name="recaptchaOptions">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Recaptcha Site Key</mat-label>
+    <input matInput type="text" id="recaptchaPublicKey" [(ngModel)]="setting.recaptchaPublicKey" name="recaptchaPublicKey">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Recaptcha Secret Key</mat-label>
+    <input matInput type="text" id="recaptchaPrivateKey" [(ngModel)]="setting.recaptchaPrivateKey" name="recaptchaPrivateKey">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Checksum Lifespan</mat-label>
+    <input matInput type="text" id="checksum_timeout" [(ngModel)]="setting.checksum_timeout" name="checksum_timeout">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Blog Feed URL</mat-label>
+    <input matInput type="text" id="blogUrl" [(ngModel)]="setting.blogUrl" name="blogUrl">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Community Messages URL</mat-label>
+    <input matInput type="text" id="communityMessagesUrl" [(ngModel)]="setting.communityMessagesUrl" name="communityMessagesUrl">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Getting Started URL</mat-label>
+    <input matInput type="text" id="gettingStartedUrl" [(ngModel)]="setting.gettingStartedUrl" name="gettingStartedUrl">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>resCacheCode</mat-label>
+    <input matInput type="text" id="resCacheCode" [(ngModel)]="setting.resCacheCode" name="resCacheCode">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Verify SSL?</mat-label>
+    <input matInput type="text" id="verifySSL" [(ngModel)]="setting.verifySSL" name="verifySSL">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Force SSL?</mat-label>
+    <input matInput type="text" id="enableSSL" [(ngModel)]="setting.enableSSL" name="enableSSL">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>WordPress Base Page</mat-label>
+    <input matInput type="text" id="wpBasePage" [(ngModel)]="setting.wpBasePage" name="wpBasePage">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Allow second-degree relationship permissions</mat-label>
+    <input matInput type="text" id="secondDegRelPermissions" [(ngModel)]="setting.secondDegRelPermissions" name="secondDegRelPermissions">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Enable Components</mat-label>
+    <input matInput type="text" id="enable_components" [(ngModel)]="setting.enable_components" name="enable_components">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Disable CiviCRM css</mat-label>
+    <input matInput type="text" id="disable_core_css" [(ngModel)]="setting.disable_core_css" name="disable_core_css">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Display &quot;empowered by CiviCRM&quot;</mat-label>
+    <input matInput type="text" id="empoweredBy" [(ngModel)]="setting.empoweredBy" name="empoweredBy">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>(EXPERIMENTAL) MySQL user does not have trigger permissions</mat-label>
+    <input matInput type="text" id="logging_no_trigger_permission" [(ngModel)]="setting.logging_no_trigger_permission" name="logging_no_trigger_permission">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Logging</mat-label>
+    <input matInput type="text" id="logging" [(ngModel)]="setting.logging" name="logging">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Logging Unique ID not recorded before</mat-label>
+    <input matInput type="text" id="logging_uniqueid_date" [(ngModel)]="setting.logging_uniqueid_date" name="logging_uniqueid_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>All tables use Unique Connection ID</mat-label>
+    <input matInput type="text" id="logging_all_tables_uniquid" [(ngModel)]="setting.logging_all_tables_uniquid" name="logging_all_tables_uniquid">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Drupal Users Table Name</mat-label>
+    <input matInput type="text" id="userFrameworkUsersTableName" [(ngModel)]="setting.userFrameworkUsersTableName" name="userFrameworkUsersTableName">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>WordPress Path to wp-load.php</mat-label>
+    <input matInput type="text" id="wpLoadPhp" [(ngModel)]="setting.wpLoadPhp" name="wpLoadPhp">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Secure Cache Timeout</mat-label>
+    <input matInput type="text" id="secure_cache_timeout_minutes" [(ngModel)]="setting.secure_cache_timeout_minutes" name="secure_cache_timeout_minutes">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Unique Site ID</mat-label>
+    <input matInput type="text" id="site_id" [(ngModel)]="setting.site_id" name="site_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Size of &quot;Recent Items&quot; stack</mat-label>
+    <input matInput type="text" id="recentItemsMaxCount" [(ngModel)]="setting.recentItemsMaxCount" name="recentItemsMaxCount">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Recent Items Providers</mat-label>
+    <input matInput type="text" id="recentItemsProviders" [(ngModel)]="setting.recentItemsProviders" name="recentItemsProviders">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Default limit for dedupe screen</mat-label>
+    <input matInput type="text" id="dedupe_default_limit" [(ngModel)]="setting.dedupe_default_limit" name="dedupe_default_limit">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Sync CMS Email</mat-label>
+    <input matInput type="text" id="syncCMSEmail" [(ngModel)]="setting.syncCMSEmail" name="syncCMSEmail">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Preserve activity filters as a user preference</mat-label>
+    <input matInput type="text" id="preserve_activity_tab_filter" [(ngModel)]="setting.preserve_activity_tab_filter" name="preserve_activity_tab_filter">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Do not notify assignees for</mat-label>
+    <input matInput type="text" id="do_not_notify_assignees_for" [(ngModel)]="setting.do_not_notify_assignees_for" name="do_not_notify_assignees_for">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Asset Caching</mat-label>
+    <input matInput type="text" id="assetCache" [(ngModel)]="setting.assetCache" name="assetCache">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Enable Drupal Watchdog Logging</mat-label>
+    <input matInput type="text" id="userFrameworkLogging" [(ngModel)]="setting.userFrameworkLogging" name="userFrameworkLogging">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Enable Debugging</mat-label>
+    <input matInput type="text" id="debug_enabled" [(ngModel)]="setting.debug_enabled" name="debug_enabled">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Display Backtrace</mat-label>
+    <input matInput type="text" id="backtrace" [(ngModel)]="setting.backtrace" name="backtrace">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Environment</mat-label>
+    <input matInput type="text" id="environment" [(ngModel)]="setting.environment" name="environment">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Fatal Error Handler</mat-label>
+    <input matInput type="text" id="fatalErrorHandler" [(ngModel)]="setting.fatalErrorHandler" name="fatalErrorHandler">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Temporary Files Directory</mat-label>
+    <input matInput type="text" id="uploadDir" [(ngModel)]="setting.uploadDir" name="uploadDir">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Image Directory</mat-label>
+    <input matInput type="text" id="imageUploadDir" [(ngModel)]="setting.imageUploadDir" name="imageUploadDir">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Custom Files Directory</mat-label>
+    <input matInput type="text" id="customFileUploadDir" [(ngModel)]="setting.customFileUploadDir" name="customFileUploadDir">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Custom Template Directory</mat-label>
+    <input matInput type="text" id="customTemplateDir" [(ngModel)]="setting.customTemplateDir" name="customTemplateDir">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Custom PHP Directory</mat-label>
+    <input matInput type="text" id="customPHPPathDir" [(ngModel)]="setting.customPHPPathDir" name="customPHPPathDir">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Extensions Directory</mat-label>
+    <input matInput type="text" id="extensionsDir" [(ngModel)]="setting.extensionsDir" name="extensionsDir">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Enable Event Cart</mat-label>
+    <input matInput type="text" id="enable_cart" [(ngModel)]="setting.enable_cart" name="enable_cart">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Dashboard entries</mat-label>
+    <input matInput type="text" id="show_events" [(ngModel)]="setting.show_events" name="show_events">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Extension Repo URL</mat-label>
+    <input matInput type="text" id="ext_repo_url" [(ngModel)]="setting.ext_repo_url" name="ext_repo_url">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Custom Translate Function</mat-label>
+    <input matInput type="text" id="customTranslateFunction" [(ngModel)]="setting.customTranslateFunction" name="customTranslateFunction">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Thousands Separator</mat-label>
+    <input matInput type="text" id="monetaryThousandSeparator" [(ngModel)]="setting.monetaryThousandSeparator" name="monetaryThousandSeparator">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Decimal Delimiter</mat-label>
+    <input matInput type="text" id="monetaryDecimalPoint" [(ngModel)]="setting.monetaryDecimalPoint" name="monetaryDecimalPoint">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Monetary Amount Display</mat-label>
+    <input matInput type="text" id="moneyformat" [(ngModel)]="setting.moneyformat" name="moneyformat">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Monetary Value Display</mat-label>
+    <input matInput type="text" id="moneyvalueformat" [(ngModel)]="setting.moneyvalueformat" name="moneyvalueformat">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Default Currency</mat-label>
+    <input matInput type="text" id="defaultCurrency" [(ngModel)]="setting.defaultCurrency" name="defaultCurrency">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Default Country</mat-label>
+    <input matInput type="text" id="defaultContactCountry" [(ngModel)]="setting.defaultContactCountry" name="defaultContactCountry">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Default State/Province</mat-label>
+    <input matInput type="text" id="defaultContactStateProvince" [(ngModel)]="setting.defaultContactStateProvince" name="defaultContactStateProvince">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Available Countries</mat-label>
+    <input matInput type="text" id="countryLimit" [(ngModel)]="setting.countryLimit" name="countryLimit">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Available States and Provinces (by Country)</mat-label>
+    <input matInput type="text" id="provinceLimit" [(ngModel)]="setting.provinceLimit" name="provinceLimit">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Inherit CMS Language</mat-label>
+    <input matInput type="text" id="inheritLocale" [(ngModel)]="setting.inheritLocale" name="inheritLocale">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Date Format: Complete Date and Time</mat-label>
+    <input matInput type="text" id="dateformatDatetime" [(ngModel)]="setting.dateformatDatetime" name="dateformatDatetime">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Date Format: Complete Date</mat-label>
+    <input matInput type="text" id="dateformatFull" [(ngModel)]="setting.dateformatFull" name="dateformatFull">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Date Format: Month and Year</mat-label>
+    <input matInput type="text" id="dateformatPartial" [(ngModel)]="setting.dateformatPartial" name="dateformatPartial">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Date Format: Time Only</mat-label>
+    <input matInput type="text" id="dateformatTime" [(ngModel)]="setting.dateformatTime" name="dateformatTime">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Date Format: Year Only</mat-label>
+    <input matInput type="text" id="dateformatYear" [(ngModel)]="setting.dateformatYear" name="dateformatYear">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Date Format: Financial Batch</mat-label>
+    <input matInput type="text" id="dateformatFinancialBatch" [(ngModel)]="setting.dateformatFinancialBatch" name="dateformatFinancialBatch">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Date Format: Short date Month Day Year</mat-label>
+    <input matInput type="text" id="dateformatshortdate" [(ngModel)]="setting.dateformatshortdate" name="dateformatshortdate">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Date Input Format</mat-label>
+    <input matInput type="text" id="dateInputFormat" [(ngModel)]="setting.dateInputFormat" name="dateInputFormat">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Import / Export Field Separator</mat-label>
+    <input matInput type="text" id="fieldSeparator" [(ngModel)]="setting.fieldSeparator" name="fieldSeparator">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Fiscal Year Start</mat-label>
+    <input matInput type="text" id="fiscalYearStart" [(ngModel)]="setting.fiscalYearStart" name="fiscalYearStart">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Available Languages (Multi-lingual)</mat-label>
+    <input matInput type="text" id="languageLimit" [(ngModel)]="setting.languageLimit" name="languageLimit">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Default Language</mat-label>
+    <input matInput type="text" id="lcMessages" [(ngModel)]="setting.lcMessages" name="lcMessages">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Legacy Encoding</mat-label>
+    <input matInput type="text" id="legacyEncoding" [(ngModel)]="setting.legacyEncoding" name="legacyEncoding">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Time Input Format</mat-label>
+    <input matInput type="text" id="timeInputFormat" [(ngModel)]="setting.timeInputFormat" name="timeInputFormat">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Week begins on</mat-label>
+    <input matInput type="text" id="weekBegins" [(ngModel)]="setting.weekBegins" name="weekBegins">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Default Language for contacts</mat-label>
+    <input matInput type="text" id="contact_default_language" [(ngModel)]="setting.contact_default_language" name="contact_default_language">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Enable Double Opt-in for Profile Group(s) field</mat-label>
+    <input matInput type="text" id="profile_double_optin" [(ngModel)]="setting.profile_double_optin" name="profile_double_optin">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Track replies using VERP in Reply-To header</mat-label>
+    <input matInput type="text" id="track_civimail_replies" [(ngModel)]="setting.track_civimail_replies" name="track_civimail_replies">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Use CiviMail Workflow</mat-label>
+    <input matInput type="text" id="civimail_workflow" [(ngModel)]="setting.civimail_workflow" name="civimail_workflow">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Lock Mails Server-Wide for Mail Sending</mat-label>
+    <input matInput type="text" id="civimail_server_wide_lock" [(ngModel)]="setting.civimail_server_wide_lock" name="civimail_server_wide_lock">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Enable Custom Reply-To</mat-label>
+    <input matInput type="text" id="replyTo" [(ngModel)]="setting.replyTo" name="replyTo">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Mailing Backend</mat-label>
+    <input matInput type="text" id="mailing_backend" [(ngModel)]="setting.mailing_backend" name="mailing_backend">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Enable Double Opt-in for Profile Group(s) field</mat-label>
+    <input matInput type="text" id="profile_add_to_group_double_optin" [(ngModel)]="setting.profile_add_to_group_double_optin" name="profile_add_to_group_double_optin">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Disable check for mandatory tokens</mat-label>
+    <input matInput type="text" id="disable_mandatory_tokens_check" [(ngModel)]="setting.disable_mandatory_tokens_check" name="disable_mandatory_tokens_check">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>CiviMail dedupes e-mail addresses by default</mat-label>
+    <input matInput type="text" id="dedupe_email_default" [(ngModel)]="setting.dedupe_email_default" name="dedupe_email_default">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Hashed Mailing URL&#039;s</mat-label>
+    <input matInput type="text" id="hash_mailing_url" [(ngModel)]="setting.hash_mailing_url" name="hash_mailing_url">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label> Multiple Bulk Emails</mat-label>
+    <input matInput type="text" id="civimail_multiple_bulk_emails" [(ngModel)]="setting.civimail_multiple_bulk_emails" name="civimail_multiple_bulk_emails">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Enable CiviMail to generate Message-ID header</mat-label>
+    <input matInput type="text" id="include_message_id" [(ngModel)]="setting.include_message_id" name="include_message_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Mailer Batch Limit</mat-label>
+    <input matInput type="text" id="mailerBatchLimit" [(ngModel)]="setting.mailerBatchLimit" name="mailerBatchLimit">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Mailer Job Size</mat-label>
+    <input matInput type="text" id="mailerJobSize" [(ngModel)]="setting.mailerJobSize" name="mailerJobSize">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Mailer Cron Job Limit</mat-label>
+    <input matInput type="text" id="mailerJobsMax" [(ngModel)]="setting.mailerJobsMax" name="mailerJobsMax">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Mailer Throttle Time</mat-label>
+    <input matInput type="text" id="mailThrottleTime" [(ngModel)]="setting.mailThrottleTime" name="mailThrottleTime">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>VERP Separator</mat-label>
+    <input matInput type="text" id="verpSeparator" [(ngModel)]="setting.verpSeparator" name="verpSeparator">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Enable CiviMail to create activities on delivery</mat-label>
+    <input matInput type="text" id="write_activity_record" [(ngModel)]="setting.write_activity_record" name="write_activity_record">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Simple mail limit</mat-label>
+    <input matInput type="text" id="simple_mail_limit" [(ngModel)]="setting.simple_mail_limit" name="simple_mail_limit">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Enable automatic CiviMail recipient count display</mat-label>
+    <input matInput type="text" id="auto_recipient_rebuild" [(ngModel)]="setting.auto_recipient_rebuild" name="auto_recipient_rebuild">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Allow mail from logged in contact</mat-label>
+    <input matInput type="text" id="allow_mail_from_logged_in_contact" [(ngModel)]="setting.allow_mail_from_logged_in_contact" name="allow_mail_from_logged_in_contact">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Geo Provider Key</mat-label>
+    <input matInput type="text" id="geoAPIKey" [(ngModel)]="setting.geoAPIKey" name="geoAPIKey">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Geocoding Provider</mat-label>
+    <input matInput type="text" id="geoProvider" [(ngModel)]="setting.geoProvider" name="geoProvider">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Map Provider Key</mat-label>
+    <input matInput type="text" id="mapAPIKey" [(ngModel)]="setting.mapAPIKey" name="mapAPIKey">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Mapping Provider</mat-label>
+    <input matInput type="text" id="mapProvider" [(ngModel)]="setting.mapProvider" name="mapProvider">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Default online membership renewal page</mat-label>
+    <input matInput type="text" id="default_renewal_contribution_page" [(ngModel)]="setting.default_renewal_contribution_page" name="default_renewal_contribution_page">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Multisite Is enabled</mat-label>
+    <input matInput type="text" id="is_enabled" [(ngModel)]="setting.is_enabled" name="is_enabled">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Multisite Domain Group</mat-label>
+    <input matInput type="text" id="domain_group_id" [(ngModel)]="setting.domain_group_id" name="domain_group_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Domain Event Price Set</mat-label>
+    <input matInput type="text" id="event_price_set_domain_id" [(ngModel)]="setting.event_price_set_domain_id" name="event_price_set_domain_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Unique Email per Domain?</mat-label>
+    <input matInput type="text" id="uniq_email_per_site" [(ngModel)]="setting.uniq_email_per_site" name="uniq_email_per_site">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Autocomplete Results</mat-label>
+    <input matInput type="text" id="search_autocomplete_count" [(ngModel)]="setting.search_autocomplete_count" name="search_autocomplete_count">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>InnoDB Full Text Search</mat-label>
+    <input matInput type="text" id="enable_innodb_fts" [(ngModel)]="setting.enable_innodb_fts" name="enable_innodb_fts">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>How to handle full-tet queries</mat-label>
+    <input matInput type="text" id="fts_query_mode" [(ngModel)]="setting.fts_query_mode" name="fts_query_mode">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Include Order By Clause</mat-label>
+    <input matInput type="text" id="includeOrderByClause" [(ngModel)]="setting.includeOrderByClause" name="includeOrderByClause">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Automatic Wildcard</mat-label>
+    <input matInput type="text" id="includeWildCardInName" [(ngModel)]="setting.includeWildCardInName" name="includeWildCardInName">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Include Email</mat-label>
+    <input matInput type="text" id="includeEmailInName" [(ngModel)]="setting.includeEmailInName" name="includeEmailInName">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Include Nickname</mat-label>
+    <input matInput type="text" id="includeNickNameInName" [(ngModel)]="setting.includeNickNameInName" name="includeNickNameInName">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Include Alphabetical Pager</mat-label>
+    <input matInput type="text" id="includeAlphabeticalPager" [(ngModel)]="setting.includeAlphabeticalPager" name="includeAlphabeticalPager">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Smart group cache timeout</mat-label>
+    <input matInput type="text" id="smartGroupCacheTimeout" [(ngModel)]="setting.smartGroupCacheTimeout" name="smartGroupCacheTimeout">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Default Contact Search Profile</mat-label>
+    <input matInput type="text" id="defaultSearchProfileID" [(ngModel)]="setting.defaultSearchProfileID" name="defaultSearchProfileID">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Search Primary Details Only</mat-label>
+    <input matInput type="text" id="searchPrimaryDetailsOnly" [(ngModel)]="setting.searchPrimaryDetailsOnly" name="searchPrimaryDetailsOnly">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>CiviCRM Resource URL</mat-label>
+    <input matInput type="text" id="userFrameworkResourceURL" [(ngModel)]="setting.userFrameworkResourceURL" name="userFrameworkResourceURL">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Image Upload URL</mat-label>
+    <input matInput type="text" id="imageUploadURL" [(ngModel)]="setting.imageUploadURL" name="imageUploadURL">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Custom CSS URL</mat-label>
+    <input matInput type="text" id="customCSSURL" [(ngModel)]="setting.customCSSURL" name="customCSSURL">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Extension Resource URL</mat-label>
+    <input matInput type="text" id="extensionsURL" [(ngModel)]="setting.extensionsURL" name="extensionsURL">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label></mat-label>
+    <input matInput type="text" id="slider_widget_fields" [(ngModel)]="setting.slider_widget_fields" name="slider_widget_fields">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label></mat-label>
+    <input matInput type="text" id="volunteer_project_default_profiles" [(ngModel)]="setting.volunteer_project_default_profiles" name="volunteer_project_default_profiles">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label></mat-label>
+    <input matInput type="text" id="volunteer_project_default_campaign" [(ngModel)]="setting.volunteer_project_default_campaign" name="volunteer_project_default_campaign">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label></mat-label>
+    <input matInput type="text" id="volunteer_project_default_locblock" [(ngModel)]="setting.volunteer_project_default_locblock" name="volunteer_project_default_locblock">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label></mat-label>
+    <input matInput type="text" id="volunteer_project_default_is_active" [(ngModel)]="setting.volunteer_project_default_is_active" name="volunteer_project_default_is_active">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label></mat-label>
+    <input matInput type="text" id="volunteer_project_default_contacts" [(ngModel)]="setting.volunteer_project_default_contacts" name="volunteer_project_default_contacts">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label></mat-label>
+    <input matInput type="text" id="volunteer_general_campaign_filter_type" [(ngModel)]="setting.volunteer_general_campaign_filter_type" name="volunteer_general_campaign_filter_type">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label></mat-label>
+    <input matInput type="text" id="volunteer_general_campaign_filter_list" [(ngModel)]="setting.volunteer_general_campaign_filter_list" name="volunteer_general_campaign_filter_list">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label></mat-label>
+    <input matInput type="text" id="volunteer_general_project_settings_help_text" [(ngModel)]="setting.volunteer_general_project_settings_help_text" name="volunteer_general_project_settings_help_text">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-setting">
+  <div class="entity-title"></div>
+</div>

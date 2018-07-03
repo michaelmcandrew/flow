@@ -1,0 +1,29 @@
+<mat-card>
+  <mat-card-title>
+    AclRole
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Entity Role</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="aclRole.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>ACL Role ID</mat-label>
+    <input matInput type="text" id="acl_role_id" [(ngModel)]="aclRole.acl_role_id" name="acl_role_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Entity Table</mat-label>
+    <input matInput type="text" id="entity_table" [(ngModel)]="aclRole.entity_table" name="entity_table">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>ACL Entity ID</mat-label>
+    <input matInput type="text" id="entity_id" [(ngModel)]="aclRole.entity_id" name="entity_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>ACL Entity Role is Active</mat-label>
+    <input matInput type="text" id="is_active" [(ngModel)]="aclRole.is_active" name="is_active">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-acl-role">
+  <div class="entity-title"></div>
+</div>

@@ -1,0 +1,57 @@
+<mat-card>
+  <mat-card-title>
+    Navigation
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Navigation ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="navigation.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Navigation Domain</mat-label>
+    <input matInput type="text" id="domain_id" [(ngModel)]="navigation.domain_id" name="domain_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Navigation Item Label</mat-label>
+    <input matInput type="text" id="label" [(ngModel)]="navigation.label" name="label">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Navigation Item Machine Name</mat-label>
+    <input matInput type="text" id="name" [(ngModel)]="navigation.name" name="name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Url</mat-label>
+    <input matInput type="text" id="url" [(ngModel)]="navigation.url" name="url">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Icon</mat-label>
+    <input matInput type="text" id="icon" [(ngModel)]="navigation.icon" name="icon">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Required Permission</mat-label>
+    <input matInput type="text" id="permission" [(ngModel)]="navigation.permission" name="permission">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Permission Operator</mat-label>
+    <input matInput type="text" id="permission_operator" [(ngModel)]="navigation.permission_operator" name="permission_operator">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Navigation parent ID</mat-label>
+    <input matInput type="text" id="parent_id" [(ngModel)]="navigation.parent_id" name="parent_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Is Active</mat-label>
+    <input matInput type="text" id="is_active" [(ngModel)]="navigation.is_active" name="is_active">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Use separator</mat-label>
+    <input matInput type="text" id="has_separator" [(ngModel)]="navigation.has_separator" name="has_separator">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Order</mat-label>
+    <input matInput type="text" id="weight" [(ngModel)]="navigation.weight" name="weight">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-navigation">
+  <div class="entity-title"></div>
+</div>

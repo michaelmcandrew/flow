@@ -1,0 +1,21 @@
+<mat-card>
+  <mat-card-title>
+    GroupNesting
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Group Nesting ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="groupNesting.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Child Group</mat-label>
+    <input matInput type="text" id="child_group_id" [(ngModel)]="groupNesting.child_group_id" name="child_group_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Parent Group</mat-label>
+    <input matInput type="text" id="parent_group_id" [(ngModel)]="groupNesting.parent_group_id" name="parent_group_id">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-group-nesting">
+  <div class="entity-title"></div>
+</div>

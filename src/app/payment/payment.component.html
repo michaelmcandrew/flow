@@ -1,0 +1,21 @@
+<mat-card>
+  <mat-card-title>
+    Payment
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Contribution ID</mat-label>
+    <input matInput type="text" id="contribution_id" [(ngModel)]="payment.contribution_id" name="contribution_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Entity Table</mat-label>
+    <input matInput type="text" id="entity_table" [(ngModel)]="payment.entity_table" name="entity_table">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Entity ID</mat-label>
+    <input matInput type="text" id="entity_id" [(ngModel)]="payment.entity_id" name="entity_id">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-payment">
+  <div class="entity-title"></div>
+</div>

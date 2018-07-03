@@ -1,0 +1,61 @@
+<mat-card>
+  <mat-card-title>
+    PaymentToken
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Payment Token ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="paymentToken.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Contact ID</mat-label>
+    <input matInput type="text" id="contact_id" [(ngModel)]="paymentToken.contact_id" name="contact_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Payment Processor ID</mat-label>
+    <input matInput type="text" id="payment_processor_id" [(ngModel)]="paymentToken.payment_processor_id" name="payment_processor_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Token</mat-label>
+    <input matInput type="text" id="token" [(ngModel)]="paymentToken.token" name="token">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Created Date</mat-label>
+    <input matInput type="text" id="created_date" [(ngModel)]="paymentToken.created_date" name="created_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Created ID</mat-label>
+    <input matInput type="text" id="created_id" [(ngModel)]="paymentToken.created_id" name="created_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Expiry Date</mat-label>
+    <input matInput type="text" id="expiry_date" [(ngModel)]="paymentToken.expiry_date" name="expiry_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input matInput type="text" id="email" [(ngModel)]="paymentToken.email" name="email">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Billing First Name</mat-label>
+    <input matInput type="text" id="billing_first_name" [(ngModel)]="paymentToken.billing_first_name" name="billing_first_name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Billing Middle Name</mat-label>
+    <input matInput type="text" id="billing_middle_name" [(ngModel)]="paymentToken.billing_middle_name" name="billing_middle_name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Billing Last Name</mat-label>
+    <input matInput type="text" id="billing_last_name" [(ngModel)]="paymentToken.billing_last_name" name="billing_last_name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Masked Account Number</mat-label>
+    <input matInput type="text" id="masked_account_number" [(ngModel)]="paymentToken.masked_account_number" name="masked_account_number">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>IP Address</mat-label>
+    <input matInput type="text" id="ip_address" [(ngModel)]="paymentToken.ip_address" name="ip_address">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-payment-token">
+  <div class="entity-title"></div>
+</div>

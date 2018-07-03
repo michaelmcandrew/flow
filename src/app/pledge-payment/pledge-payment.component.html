@@ -1,0 +1,49 @@
+<mat-card>
+  <mat-card-title>
+    PledgePayment
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Payment ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="pledgePayment.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Pledge</mat-label>
+    <input matInput type="text" id="pledge_id" [(ngModel)]="pledgePayment.pledge_id" name="pledge_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Contribution</mat-label>
+    <input matInput type="text" id="contribution_id" [(ngModel)]="pledgePayment.contribution_id" name="contribution_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Scheduled Amount</mat-label>
+    <input matInput type="text" id="scheduled_amount" [(ngModel)]="pledgePayment.scheduled_amount" name="scheduled_amount">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Actual Amount</mat-label>
+    <input matInput type="text" id="actual_amount" [(ngModel)]="pledgePayment.actual_amount" name="actual_amount">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Currency</mat-label>
+    <input matInput type="text" id="currency" [(ngModel)]="pledgePayment.currency" name="currency">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Scheduled Date</mat-label>
+    <input matInput type="text" id="scheduled_date" [(ngModel)]="pledgePayment.scheduled_date" name="scheduled_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Last Reminder</mat-label>
+    <input matInput type="text" id="reminder_date" [(ngModel)]="pledgePayment.reminder_date" name="reminder_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Reminders Sent</mat-label>
+    <input matInput type="text" id="reminder_count" [(ngModel)]="pledgePayment.reminder_count" name="reminder_count">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Payment Status</mat-label>
+    <input matInput type="text" id="status_id" [(ngModel)]="pledgePayment.status_id" name="status_id">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-pledge-payment">
+  <div class="entity-title"></div>
+</div>

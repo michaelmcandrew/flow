@@ -1,0 +1,41 @@
+<mat-card>
+  <mat-card-title>
+    CaseType
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Case Type ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="caseType.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Case Type Name</mat-label>
+    <input matInput type="text" id="name" [(ngModel)]="caseType.name" name="name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Case Type Title</mat-label>
+    <input matInput type="text" id="title" [(ngModel)]="caseType.title" name="title">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Case Type Description</mat-label>
+    <input matInput type="text" id="description" [(ngModel)]="caseType.description" name="description">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Case Type Is Active</mat-label>
+    <input matInput type="text" id="is_active" [(ngModel)]="caseType.is_active" name="is_active">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Case Type Is Reserved</mat-label>
+    <input matInput type="text" id="is_reserved" [(ngModel)]="caseType.is_reserved" name="is_reserved">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Order</mat-label>
+    <input matInput type="text" id="weight" [(ngModel)]="caseType.weight" name="weight">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Case Type Definition</mat-label>
+    <input matInput type="text" id="definition" [(ngModel)]="caseType.definition" name="definition">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-case-type">
+  <div class="entity-title"></div>
+</div>

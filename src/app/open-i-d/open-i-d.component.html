@@ -1,0 +1,33 @@
+<mat-card>
+  <mat-card-title>
+    OpenID
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Open ID identifier</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="openID.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>OpenID Contact</mat-label>
+    <input matInput type="text" id="contact_id" [(ngModel)]="openID.contact_id" name="contact_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>OpenID Location Type</mat-label>
+    <input matInput type="text" id="location_type_id" [(ngModel)]="openID.location_type_id" name="location_type_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>OpenID</mat-label>
+    <input matInput type="text" id="openid" [(ngModel)]="openID.openid" name="openid">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Allowed to login?</mat-label>
+    <input matInput type="text" id="allowed_to_login" [(ngModel)]="openID.allowed_to_login" name="allowed_to_login">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Is OpenID Primary?</mat-label>
+    <input matInput type="text" id="is_primary" [(ngModel)]="openID.is_primary" name="is_primary">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-open-i-d">
+  <div class="entity-title"></div>
+</div>

@@ -1,0 +1,53 @@
+<mat-card>
+  <mat-card-title>
+    Relationship
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Relationship ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="relationship.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Contact A</mat-label>
+    <input matInput type="text" id="contact_id_a" [(ngModel)]="relationship.contact_id_a" name="contact_id_a">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Contact B</mat-label>
+    <input matInput type="text" id="contact_id_b" [(ngModel)]="relationship.contact_id_b" name="contact_id_b">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Relationship Type</mat-label>
+    <input matInput type="text" id="relationship_type_id" [(ngModel)]="relationship.relationship_type_id" name="relationship_type_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Relationship Start Date</mat-label>
+    <input matInput type="text" id="start_date" [(ngModel)]="relationship.start_date" name="start_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Relationship End Date</mat-label>
+    <input matInput type="text" id="end_date" [(ngModel)]="relationship.end_date" name="end_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Relationship Is Active</mat-label>
+    <input matInput type="text" id="is_active" [(ngModel)]="relationship.is_active" name="is_active">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Relationship Description</mat-label>
+    <input matInput type="text" id="description" [(ngModel)]="relationship.description" name="description">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Contact A has Permission Over Contact B</mat-label>
+    <input matInput type="text" id="is_permission_a_b" [(ngModel)]="relationship.is_permission_a_b" name="is_permission_a_b">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Contact B has Permission Over Contact A</mat-label>
+    <input matInput type="text" id="is_permission_b_a" [(ngModel)]="relationship.is_permission_b_a" name="is_permission_b_a">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Relationship Case</mat-label>
+    <input matInput type="text" id="case_id" [(ngModel)]="relationship.case_id" name="case_id">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-relationship">
+  <div class="entity-title"></div>
+</div>

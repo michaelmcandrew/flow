@@ -1,0 +1,37 @@
+<mat-card>
+  <mat-card-title>
+    MailingGroup
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Mailing Group ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="mailingGroup.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Mailing</mat-label>
+    <input matInput type="text" id="mailing_id" [(ngModel)]="mailingGroup.mailing_id" name="mailing_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Mailing Group Type</mat-label>
+    <input matInput type="text" id="group_type" [(ngModel)]="mailingGroup.group_type" name="group_type">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Mailing Group Entity Table</mat-label>
+    <input matInput type="text" id="entity_table" [(ngModel)]="mailingGroup.entity_table" name="entity_table">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Mailing Group Entity</mat-label>
+    <input matInput type="text" id="entity_id" [(ngModel)]="mailingGroup.entity_id" name="entity_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Mailing Group Search</mat-label>
+    <input matInput type="text" id="search_id" [(ngModel)]="mailingGroup.search_id" name="search_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Mailing Group Search Arguments</mat-label>
+    <input matInput type="text" id="search_args" [(ngModel)]="mailingGroup.search_args" name="search_args">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-mailing-group">
+  <div class="entity-title"></div>
+</div>

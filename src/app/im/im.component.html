@@ -1,0 +1,37 @@
+<mat-card>
+  <mat-card-title>
+    Im
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Instant Messenger ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="im.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>IM Contact</mat-label>
+    <input matInput type="text" id="contact_id" [(ngModel)]="im.contact_id" name="contact_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>IM Location Type</mat-label>
+    <input matInput type="text" id="location_type_id" [(ngModel)]="im.location_type_id" name="location_type_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>IM Screen Name</mat-label>
+    <input matInput type="text" id="name" [(ngModel)]="im.name" name="name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>IM Provider</mat-label>
+    <input matInput type="text" id="provider_id" [(ngModel)]="im.provider_id" name="provider_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Is IM Primary?</mat-label>
+    <input matInput type="text" id="is_primary" [(ngModel)]="im.is_primary" name="is_primary">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Is IM Billing?</mat-label>
+    <input matInput type="text" id="is_billing" [(ngModel)]="im.is_billing" name="is_billing">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-im">
+  <div class="entity-title"></div>
+</div>

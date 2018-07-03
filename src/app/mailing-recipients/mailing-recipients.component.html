@@ -1,0 +1,29 @@
+<mat-card>
+  <mat-card-title>
+    MailingRecipients
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Mailing Recipients ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="mailingRecipients.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Mailing</mat-label>
+    <input matInput type="text" id="mailing_id" [(ngModel)]="mailingRecipients.mailing_id" name="mailing_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Mailing Recipient</mat-label>
+    <input matInput type="text" id="contact_id" [(ngModel)]="mailingRecipients.contact_id" name="contact_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Recipient Email</mat-label>
+    <input matInput type="text" id="email_id" [(ngModel)]="mailingRecipients.email_id" name="email_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Recipient Phone</mat-label>
+    <input matInput type="text" id="phone_id" [(ngModel)]="mailingRecipients.phone_id" name="phone_id">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-mailing-recipients">
+  <div class="entity-title"></div>
+</div>

@@ -1,0 +1,25 @@
+<mat-card>
+  <mat-card-title>
+    Mapping
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Mapping ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="mapping.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput type="text" id="name" [(ngModel)]="mapping.name" name="name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Description</mat-label>
+    <input matInput type="text" id="description" [(ngModel)]="mapping.description" name="description">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Mapping Type</mat-label>
+    <input matInput type="text" id="mapping_type_id" [(ngModel)]="mapping.mapping_type_id" name="mapping_type_id">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-mapping">
+  <div class="entity-title"></div>
+</div>

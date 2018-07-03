@@ -1,0 +1,65 @@
+<mat-card>
+  <mat-card-title>
+    LineItem
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Line Item ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="lineItem.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Line Item Entity Type</mat-label>
+    <input matInput type="text" id="entity_table" [(ngModel)]="lineItem.entity_table" name="entity_table">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Line Item Entity</mat-label>
+    <input matInput type="text" id="entity_id" [(ngModel)]="lineItem.entity_id" name="entity_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Line Item Contribution</mat-label>
+    <input matInput type="text" id="contribution_id" [(ngModel)]="lineItem.contribution_id" name="contribution_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Line Item Price Field</mat-label>
+    <input matInput type="text" id="price_field_id" [(ngModel)]="lineItem.price_field_id" name="price_field_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Line Item Label</mat-label>
+    <input matInput type="text" id="label" [(ngModel)]="lineItem.label" name="label">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Line Item Quantity</mat-label>
+    <input matInput type="text" id="qty" [(ngModel)]="lineItem.qty" name="qty">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Unit Price</mat-label>
+    <input matInput type="text" id="unit_price" [(ngModel)]="lineItem.unit_price" name="unit_price">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Line Item Total</mat-label>
+    <input matInput type="text" id="line_total" [(ngModel)]="lineItem.line_total" name="line_total">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Line Item Participant Count</mat-label>
+    <input matInput type="text" id="participant_count" [(ngModel)]="lineItem.participant_count" name="participant_count">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Line Item Option</mat-label>
+    <input matInput type="text" id="price_field_value_id" [(ngModel)]="lineItem.price_field_value_id" name="price_field_value_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Financial Type</mat-label>
+    <input matInput type="text" id="financial_type_id" [(ngModel)]="lineItem.financial_type_id" name="financial_type_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Non-deductible Amount</mat-label>
+    <input matInput type="text" id="non_deductible_amount" [(ngModel)]="lineItem.non_deductible_amount" name="non_deductible_amount">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Tax Amount</mat-label>
+    <input matInput type="text" id="tax_amount" [(ngModel)]="lineItem.tax_amount" name="tax_amount">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-line-item">
+  <div class="entity-title"></div>
+</div>

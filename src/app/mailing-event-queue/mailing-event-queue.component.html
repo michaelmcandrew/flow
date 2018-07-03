@@ -1,0 +1,33 @@
+<mat-card>
+  <mat-card-title>
+    MailingEventQueue
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Mailing Event Queue ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="mailingEventQueue.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Job ID</mat-label>
+    <input matInput type="text" id="job_id" [(ngModel)]="mailingEventQueue.job_id" name="job_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Email ID</mat-label>
+    <input matInput type="text" id="email_id" [(ngModel)]="mailingEventQueue.email_id" name="email_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Contact ID</mat-label>
+    <input matInput type="text" id="contact_id" [(ngModel)]="mailingEventQueue.contact_id" name="contact_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Security Hash</mat-label>
+    <input matInput type="text" id="hash" [(ngModel)]="mailingEventQueue.hash" name="hash">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Phone ID</mat-label>
+    <input matInput type="text" id="phone_id" [(ngModel)]="mailingEventQueue.phone_id" name="phone_id">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-mailing-event-queue">
+  <div class="entity-title"></div>
+</div>

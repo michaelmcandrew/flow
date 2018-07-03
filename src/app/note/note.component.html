@@ -1,0 +1,41 @@
+<mat-card>
+  <mat-card-title>
+    Note
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Note ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="note.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Note Entity</mat-label>
+    <input matInput type="text" id="entity_table" [(ngModel)]="note.entity_table" name="entity_table">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Note Entity ID</mat-label>
+    <input matInput type="text" id="entity_id" [(ngModel)]="note.entity_id" name="entity_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Note</mat-label>
+    <input matInput type="text" id="note" [(ngModel)]="note.note" name="note">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Note Created By</mat-label>
+    <input matInput type="text" id="contact_id" [(ngModel)]="note.contact_id" name="contact_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Note Modified By</mat-label>
+    <input matInput type="text" id="modified_date" [(ngModel)]="note.modified_date" name="modified_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Subject</mat-label>
+    <input matInput type="text" id="subject" [(ngModel)]="note.subject" name="subject">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Privacy</mat-label>
+    <input matInput type="text" id="privacy" [(ngModel)]="note.privacy" name="privacy">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-note">
+  <div class="entity-title"></div>
+</div>

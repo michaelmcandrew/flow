@@ -1,0 +1,45 @@
+<mat-card>
+  <mat-card-title>
+    MembershipLog
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Membership Log ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="membershipLog.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Membership ID</mat-label>
+    <input matInput type="text" id="membership_id" [(ngModel)]="membershipLog.membership_id" name="membership_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Membership Status</mat-label>
+    <input matInput type="text" id="status_id" [(ngModel)]="membershipLog.status_id" name="status_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Membership Log Start Date</mat-label>
+    <input matInput type="text" id="start_date" [(ngModel)]="membershipLog.start_date" name="start_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Membership Log End Date</mat-label>
+    <input matInput type="text" id="end_date" [(ngModel)]="membershipLog.end_date" name="end_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Membership Log modified By</mat-label>
+    <input matInput type="text" id="modified_id" [(ngModel)]="membershipLog.modified_id" name="modified_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Membership Change Date</mat-label>
+    <input matInput type="text" id="modified_date" [(ngModel)]="membershipLog.modified_date" name="modified_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Membership Type ID</mat-label>
+    <input matInput type="text" id="membership_type_id" [(ngModel)]="membershipLog.membership_type_id" name="membership_type_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Maximum Related Memberships</mat-label>
+    <input matInput type="text" id="max_related" [(ngModel)]="membershipLog.max_related" name="max_related">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-membership-log">
+  <div class="entity-title"></div>
+</div>

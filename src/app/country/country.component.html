@@ -1,0 +1,45 @@
+<mat-card>
+  <mat-card-title>
+    Country
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Country ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="country.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Country</mat-label>
+    <input matInput type="text" id="name" [(ngModel)]="country.name" name="name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Country ISO Code</mat-label>
+    <input matInput type="text" id="iso_code" [(ngModel)]="country.iso_code" name="iso_code">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Country Phone Prefix</mat-label>
+    <input matInput type="text" id="country_code" [(ngModel)]="country.country_code" name="country_code">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Address Format</mat-label>
+    <input matInput type="text" id="address_format_id" [(ngModel)]="country.address_format_id" name="address_format_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Outgoing Phone Prefix</mat-label>
+    <input matInput type="text" id="idd_prefix" [(ngModel)]="country.idd_prefix" name="idd_prefix">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Area Code</mat-label>
+    <input matInput type="text" id="ndd_prefix" [(ngModel)]="country.ndd_prefix" name="ndd_prefix">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Region</mat-label>
+    <input matInput type="text" id="region_id" [(ngModel)]="country.region_id" name="region_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Abbreviate Province?</mat-label>
+    <input matInput type="text" id="is_province_abbreviated" [(ngModel)]="country.is_province_abbreviated" name="is_province_abbreviated">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-country">
+  <div class="entity-title"></div>
+</div>

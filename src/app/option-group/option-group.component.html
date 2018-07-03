@@ -1,0 +1,41 @@
+<mat-card>
+  <mat-card-title>
+    OptionGroup
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Option Group ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="optionGroup.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Option Group Name</mat-label>
+    <input matInput type="text" id="name" [(ngModel)]="optionGroup.name" name="name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Option Group title</mat-label>
+    <input matInput type="text" id="title" [(ngModel)]="optionGroup.title" name="title">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Option Group Description</mat-label>
+    <input matInput type="text" id="description" [(ngModel)]="optionGroup.description" name="description">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Data Type for this option group</mat-label>
+    <input matInput type="text" id="data_type" [(ngModel)]="optionGroup.data_type" name="data_type">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Option Group Is Reserved?</mat-label>
+    <input matInput type="text" id="is_reserved" [(ngModel)]="optionGroup.is_reserved" name="is_reserved">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Option Group Is Active?</mat-label>
+    <input matInput type="text" id="is_active" [(ngModel)]="optionGroup.is_active" name="is_active">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Option Group Is Locked</mat-label>
+    <input matInput type="text" id="is_locked" [(ngModel)]="optionGroup.is_locked" name="is_locked">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-option-group">
+  <div class="entity-title"></div>
+</div>

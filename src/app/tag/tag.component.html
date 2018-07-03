@@ -1,0 +1,53 @@
+<mat-card>
+  <mat-card-title>
+    Tag
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Tag ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="tag.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Tag Name</mat-label>
+    <input matInput type="text" id="name" [(ngModel)]="tag.name" name="name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Description</mat-label>
+    <input matInput type="text" id="description" [(ngModel)]="tag.description" name="description">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Parent Tag</mat-label>
+    <input matInput type="text" id="parent_id" [(ngModel)]="tag.parent_id" name="parent_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Display Tag?</mat-label>
+    <input matInput type="text" id="is_selectable" [(ngModel)]="tag.is_selectable" name="is_selectable">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Reserved</mat-label>
+    <input matInput type="text" id="is_reserved" [(ngModel)]="tag.is_reserved" name="is_reserved">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Tagset</mat-label>
+    <input matInput type="text" id="is_tagset" [(ngModel)]="tag.is_tagset" name="is_tagset">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Used For</mat-label>
+    <input matInput type="text" id="used_for" [(ngModel)]="tag.used_for" name="used_for">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Tag Created By</mat-label>
+    <input matInput type="text" id="created_id" [(ngModel)]="tag.created_id" name="created_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Color</mat-label>
+    <input matInput type="text" id="color" [(ngModel)]="tag.color" name="color">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Tag Created Date</mat-label>
+    <input matInput type="text" id="created_date" [(ngModel)]="tag.created_date" name="created_date">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-tag">
+  <div class="entity-title"></div>
+</div>

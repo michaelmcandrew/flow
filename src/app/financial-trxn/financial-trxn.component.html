@@ -1,0 +1,77 @@
+<mat-card>
+  <mat-card-title>
+    FinancialTrxn
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Financial Transaction ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="financialTrxn.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Financial Transaction From Account</mat-label>
+    <input matInput type="text" id="from_financial_account_id" [(ngModel)]="financialTrxn.from_financial_account_id" name="from_financial_account_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Financial Transaction To Account</mat-label>
+    <input matInput type="text" id="to_financial_account_id" [(ngModel)]="financialTrxn.to_financial_account_id" name="to_financial_account_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Financial Transaction Date</mat-label>
+    <input matInput type="text" id="trxn_date" [(ngModel)]="financialTrxn.trxn_date" name="trxn_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Financial Total Amount</mat-label>
+    <input matInput type="text" id="total_amount" [(ngModel)]="financialTrxn.total_amount" name="total_amount">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Financial Fee Amount</mat-label>
+    <input matInput type="text" id="fee_amount" [(ngModel)]="financialTrxn.fee_amount" name="fee_amount">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Financial Net Amount</mat-label>
+    <input matInput type="text" id="net_amount" [(ngModel)]="financialTrxn.net_amount" name="net_amount">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Financial Currency</mat-label>
+    <input matInput type="text" id="currency" [(ngModel)]="financialTrxn.currency" name="currency">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Is Payment?</mat-label>
+    <input matInput type="text" id="is_payment" [(ngModel)]="financialTrxn.is_payment" name="is_payment">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Transaction ID</mat-label>
+    <input matInput type="text" id="trxn_id" [(ngModel)]="financialTrxn.trxn_id" name="trxn_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Transaction Result Code</mat-label>
+    <input matInput type="text" id="trxn_result_code" [(ngModel)]="financialTrxn.trxn_result_code" name="trxn_result_code">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Financial Transaction Status Id</mat-label>
+    <input matInput type="text" id="status_id" [(ngModel)]="financialTrxn.status_id" name="status_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Payment Processor</mat-label>
+    <input matInput type="text" id="payment_processor_id" [(ngModel)]="financialTrxn.payment_processor_id" name="payment_processor_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Payment Method</mat-label>
+    <input matInput type="text" id="payment_instrument_id" [(ngModel)]="financialTrxn.payment_instrument_id" name="payment_instrument_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Card Type ID</mat-label>
+    <input matInput type="text" id="card_type_id" [(ngModel)]="financialTrxn.card_type_id" name="card_type_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Check Number</mat-label>
+    <input matInput type="text" id="check_number" [(ngModel)]="financialTrxn.check_number" name="check_number">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Pan Truncation</mat-label>
+    <input matInput type="text" id="pan_truncation" [(ngModel)]="financialTrxn.pan_truncation" name="pan_truncation">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-financial-trxn">
+  <div class="entity-title"></div>
+</div>

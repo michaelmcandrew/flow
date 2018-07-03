@@ -1,0 +1,89 @@
+<mat-card>
+  <mat-card-title>
+    Survey
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Survey ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="survey.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Survey Title</mat-label>
+    <input matInput type="text" id="title" [(ngModel)]="survey.title" name="title">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Survey Campaign ID</mat-label>
+    <input matInput type="text" id="campaign_id" [(ngModel)]="survey.campaign_id" name="campaign_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Activity Type</mat-label>
+    <input matInput type="text" id="activity_type_id" [(ngModel)]="survey.activity_type_id" name="activity_type_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Follow up Interval</mat-label>
+    <input matInput type="text" id="recontact_interval" [(ngModel)]="survey.recontact_interval" name="recontact_interval">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Instructions</mat-label>
+    <input matInput type="text" id="instructions" [(ngModel)]="survey.instructions" name="instructions">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Survey Hold Duration</mat-label>
+    <input matInput type="text" id="release_frequency" [(ngModel)]="survey.release_frequency" name="release_frequency">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Maximum number of contacts</mat-label>
+    <input matInput type="text" id="max_number_of_contacts" [(ngModel)]="survey.max_number_of_contacts" name="max_number_of_contacts">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Default number of contacts</mat-label>
+    <input matInput type="text" id="default_number_of_contacts" [(ngModel)]="survey.default_number_of_contacts" name="default_number_of_contacts">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Survey Is Active</mat-label>
+    <input matInput type="text" id="is_active" [(ngModel)]="survey.is_active" name="is_active">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Is Default Survey</mat-label>
+    <input matInput type="text" id="is_default" [(ngModel)]="survey.is_default" name="is_default">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Survey Created By</mat-label>
+    <input matInput type="text" id="created_id" [(ngModel)]="survey.created_id" name="created_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Campaign Created Date</mat-label>
+    <input matInput type="text" id="created_date" [(ngModel)]="survey.created_date" name="created_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Survey Modified</mat-label>
+    <input matInput type="text" id="last_modified_id" [(ngModel)]="survey.last_modified_id" name="last_modified_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Survey Modified On</mat-label>
+    <input matInput type="text" id="last_modified_date" [(ngModel)]="survey.last_modified_date" name="last_modified_date">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Survey Result</mat-label>
+    <input matInput type="text" id="result_id" [(ngModel)]="survey.result_id" name="result_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>No Email Verification</mat-label>
+    <input matInput type="text" id="bypass_confirm" [(ngModel)]="survey.bypass_confirm" name="bypass_confirm">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Thank-you Title</mat-label>
+    <input matInput type="text" id="thankyou_title" [(ngModel)]="survey.thankyou_title" name="thankyou_title">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Thank-you Text</mat-label>
+    <input matInput type="text" id="thankyou_text" [(ngModel)]="survey.thankyou_text" name="thankyou_text">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Is shared through social media</mat-label>
+    <input matInput type="text" id="is_share" [(ngModel)]="survey.is_share" name="is_share">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-survey">
+  <div class="entity-title"></div>
+</div>

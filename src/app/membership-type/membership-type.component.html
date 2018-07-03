@@ -1,0 +1,93 @@
+<mat-card>
+  <mat-card-title>
+    MembershipType
+  </mat-card-title>
+  <mat-form-field>
+    <mat-label>Membership Type ID</mat-label>
+    <input matInput type="text" id="id" [(ngModel)]="membershipType.id" name="id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Membership Type Domain</mat-label>
+    <input matInput type="text" id="domain_id" [(ngModel)]="membershipType.domain_id" name="domain_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Membership Type</mat-label>
+    <input matInput type="text" id="name" [(ngModel)]="membershipType.name" name="name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Membership Type Description</mat-label>
+    <input matInput type="text" id="description" [(ngModel)]="membershipType.description" name="description">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Membership Type Organization</mat-label>
+    <input matInput type="text" id="member_of_contact_id" [(ngModel)]="membershipType.member_of_contact_id" name="member_of_contact_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Membership Financial Type</mat-label>
+    <input matInput type="text" id="financial_type_id" [(ngModel)]="membershipType.financial_type_id" name="financial_type_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Membership Type Minimum Fee</mat-label>
+    <input matInput type="text" id="minimum_fee" [(ngModel)]="membershipType.minimum_fee" name="minimum_fee">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Membership Type Duration Unit</mat-label>
+    <input matInput type="text" id="duration_unit" [(ngModel)]="membershipType.duration_unit" name="duration_unit">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Membership Type Duration Interval</mat-label>
+    <input matInput type="text" id="duration_interval" [(ngModel)]="membershipType.duration_interval" name="duration_interval">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Membership Type Plan</mat-label>
+    <input matInput type="text" id="period_type" [(ngModel)]="membershipType.period_type" name="period_type">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Fixed Period Start Day</mat-label>
+    <input matInput type="text" id="fixed_period_start_day" [(ngModel)]="membershipType.fixed_period_start_day" name="fixed_period_start_day">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Fixed Period Rollover Day</mat-label>
+    <input matInput type="text" id="fixed_period_rollover_day" [(ngModel)]="membershipType.fixed_period_rollover_day" name="fixed_period_rollover_day">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Membership Type Relationship</mat-label>
+    <input matInput type="text" id="relationship_type_id" [(ngModel)]="membershipType.relationship_type_id" name="relationship_type_id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Relationship Direction</mat-label>
+    <input matInput type="text" id="relationship_direction" [(ngModel)]="membershipType.relationship_direction" name="relationship_direction">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Max Related Members for Type</mat-label>
+    <input matInput type="text" id="max_related" [(ngModel)]="membershipType.max_related" name="max_related">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Visible</mat-label>
+    <input matInput type="text" id="visibility" [(ngModel)]="membershipType.visibility" name="visibility">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Order</mat-label>
+    <input matInput type="text" id="weight" [(ngModel)]="membershipType.weight" name="weight">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Membership Type Receipt Text</mat-label>
+    <input matInput type="text" id="receipt_text_signup" [(ngModel)]="membershipType.receipt_text_signup" name="receipt_text_signup">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Membership Type Renewal Text</mat-label>
+    <input matInput type="text" id="receipt_text_renewal" [(ngModel)]="membershipType.receipt_text_renewal" name="receipt_text_renewal">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Auto Renew</mat-label>
+    <input matInput type="text" id="auto_renew" [(ngModel)]="membershipType.auto_renew" name="auto_renew">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Is Active</mat-label>
+    <input matInput type="text" id="is_active" [(ngModel)]="membershipType.is_active" name="is_active">
+  </mat-form-field>
+  
+</mat-card>
+<div class="component component-membership-type">
+  <div class="entity-title"></div>
+</div>
