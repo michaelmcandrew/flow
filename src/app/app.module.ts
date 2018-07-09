@@ -9,11 +9,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
+import { MembershipTypeComponent } from './membership-type/membership-type.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactComponent
+    ContactComponent,
+    MembershipTypeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Contact } from './contact.model';
+import { MembershipType } from './membership-type.model';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,9 @@ export class AppComponent {
     this.contact = new Contact;
     this.contact.first_name = 'Johanna'
     this.contact.last_name = 'McAndrew'
+    this.membershipType = new MembershipType;
+    this.membershipType.id = 1
   }
-  title = 'CiviCRM';
   contact: Contact;
+  membershipType: MembershipType;
 }
