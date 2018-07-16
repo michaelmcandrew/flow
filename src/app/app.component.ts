@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Contact } from './contact.model';
-import { MembershipType } from './membership-type.model';
+import { Contact } from './entities/contact.model';
+import { MembershipType } from './entities/membership-type.model';
 
 @Component({
   selector: 'app-root',
