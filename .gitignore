@@ -1,5 +1,8 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+# ebb generated files
+src/app/entities
+
 # compiled output
 /dist
 /tmp
