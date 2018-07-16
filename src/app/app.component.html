@@ -1,5 +1,14 @@
-<mat-toolbar color="primary" class="mat-elevation-z2">
+<mat-toolbar color="primary">
   <span>CiviCRM on Angular</span>
 </mat-toolbar>
-<app-contact [contact]="contact"></app-contact>
-<app-membership-type [membershipType]="membershipType"></app-membership-type>
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened>
+    <p>Navigation</p>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-contact [contact]="contact"></app-contact>
+    <app-membership-type [membershipType]="membershipType"></app-membership-type>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<mat-toolbar>
+</mat-toolbar>

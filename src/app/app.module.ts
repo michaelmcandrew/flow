@@ -1,15 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { MatToolbarModule, MatCardModule, MatFormFieldModule, MatInputModule } from '@angular/material';
+import { MatToolbarModule, MatCardModule, MatFormFieldModule, MatInputModule, MatSidenavModule } from '@angular/material';
 
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ContactComponent } from './contact/contact.component';
-import { MembershipTypeComponent } from './membership-type/membership-type.component';
+import { ContactComponent } from './entities/contact/contact.component';
+import { MembershipTypeComponent } from './entities/membership-type/membership-type.component';
 
 @NgModule({
   declarations: [
@@ -18,14 +19,16 @@ import { MembershipTypeComponent } from './membership-type/membership-type.compo
     MembershipTypeComponent
   ],
   imports: [
-    BrowserModule,
     BrowserAnimationsModule,
+    BrowserModule,
+    HttpClientModule,
     FormsModule,
-    ReactiveFormsModule,
-    MatToolbarModule,
     MatCardModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
