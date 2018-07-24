@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Contact } from './entities/contact.model';
 import { MembershipType } from './entities/membership-type.model';
+import { ApiService } from './services/api.service';
 
 @Component({
   selector: 'app-root',
@@ -8,13 +9,17 @@ import { MembershipType } from './entities/membership-type.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(){
-    this.contact = new Contact;
-    this.contact.first_name = 'Johanna'
-    this.contact.last_name = 'McAndrew'
-    this.membershipType = new MembershipType;
-    this.membershipType.id = 1
+
+  contact: Contact
+
+  constructor(
+    private apiService: ApiService
+  ) {
   }
-  contact: Contact;
-  membershipType: MembershipType;
+
+  ngOnInit() {
+    this.apiService.getsingle('Contact', 2).subscribe((data: any) => {
+      this.contact = data
+    })
+  }
 }

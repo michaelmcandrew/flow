@@ -9,6 +9,7 @@ import { MatToolbarModule, MatCardModule, MatFormFieldModule, MatInputModule, Ma
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { ApiService } from './services/api.service';
 import { ContactComponent } from './entities/contact/contact.component';
 import { MembershipTypeComponent } from './entities/membership-type/membership-type.component';
 
@@ -30,7 +31,7 @@ import { MembershipTypeComponent } from './entities/membership-type/membership-t
     MatToolbarModule,
     ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
