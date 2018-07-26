@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Contact } from './entities/contact.model';
-import { MembershipType } from './entities/membership-type.model';
+import { Contact } from './entities/contact/contact.model';
+import { MembershipType } from './entities/membership-type/membership-type.model';
 import { ApiService } from './services/api.service';
 
 @Component({
